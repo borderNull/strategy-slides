@@ -1,0 +1,23 @@
+extends _layout.pug
+block content
+    section.sliderWrap
+        .profySlide
+            img.profySlideBrownImg(src="./img/profy-brown-side.png")
+            img.profySlideAuthorImg(src="./img/profy.png")
+            img.profySlideHopImg(src="./img/profy-hop-side.png")
+            article.profySlideArticle
+                p.profySlideArticleAuthor Олег Цукалов
+                h1.profySlideArticleHeading 
+                 |«Следующий год будет годом дефицита тонкоароматной и ароматной группы хмелей»
+                a.profySlideArticleLink(href="#") читать полностью          
+            ul.slideArticleList
+                li.slideArticleListItem
+                    p.slideArticleListItemName специальная цена
+                    a.slideArticleListItemTheme(href="#")  хмель «сапфир» по выгодной цене
+                li.slideArticleListItem
+                    p.slideArticleListItemName жизнь компании
+                    a.slideArticleListItemTheme(href="#") петербургский форум пивоваров
+                li.slideArticleListItem.active
+                    p.slideArticleListItemName взгляд профессионала
+                    a.slideArticleListItemTheme(href="#") будущее хмеля от олега цукалова
+

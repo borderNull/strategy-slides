@@ -1,0 +1,126 @@
+extends _layout
+block variables
+    -var navigation = {"about":"о нас","chain-stores":"сеть магазинов","assortiment":"ассортимент","contacts":"контакты"}
+    -var commonNav = {"main":"главная","about":"о нас","chain-stores":"сеть магазинов","assortiment":"ассортимент","contacts":"контакты"} 
+    -var brandList = ["../img/brand-item-1.png", "../img/brand-item-2.png", "../img/brand-item-3.png", "../img/brand-item-4.png"]
+    -var bottomNav = {"main":"главная","about":"о нас","chain-stores":"сеть магазинов","assortiment":"ассортимент","contacts":"контакты"}
+block content 
+    .mobileMenu
+      .mobileMenuIcon#menuIcon
+        -for(i=0;i<3;i++)
+          span.mobileMenuIconSpan
+      svg.mobileMenuLogo
+        use(xlink:href="#glavpivo-logo")
+      a.mobileMenuPhoneLink(href="tel:+7(812)998-88-91")
+        img.mobileMenuPhoneLinkImg(src="../img/telbutton.png")
+      ul.mobileMenuList
+        each name,href in commonNav
+          li.mobileMenuListItem
+            a.mobileMenuListItemLink(href=href)=name
+    nav.navSection
+      svg.navSectionLogo
+        use(xlink:href="#glavpivo-logo")
+      ul.navSectionList
+        each name,href in navigation
+          li.navSectionListItem
+            a.navSectionListItemLink.shopSlide(href=href)=name
+    .slideSides.shopSlide
+      .slideSidesInfo
+        p.slideSidesInfoName пивная 
+          span.slideSidesInfoNameSpan главрыба
+        h1.slideSidesInfoHeading 
+          |Лучшее пиво
+          span.slideSidesInfoHeadingSpan , 
+          | раки 
+          span.slideSidesInfoHeadingSpan и рыба
+        p.slideSidesInfoDescr В ноябре 2016 года ГлавПиво открывает магазин-пивную на Малом проспект В.О., 82. 
+        p.slideSidesInfoDescr Попробуйте 10 сортов лучшего пива. В продаже есть живые раки, вкусная рыба и оригинальные закуски.
+        a.slideSidesInfoLink(href="#") Узнать подробнее
+    .weekBrands
+      p.weekBrandText популярные бренды недели
+      .weekBrandCard
+        .weekBrandCardFlipper
+          .weekBrandCardFrontside     
+            svg.weekBrandCardLike
+              use(xlink:href="#like")
+            img.weekBrandCardImg(src="./img/jzhiguli.png")
+            .weekBrandCardDetails
+              p.weekBrandCardDetailsText 4,9% об.
+              p.weekBrandCardDetailsText IBU 5
+            h3.weekBrandCardName Жигулевское пиво
+            img.weekBrandCardArrow(src="./img/arrowrightcircle.png")
+          .weekBrandCardBackside
+            h5.weekBrandCardBacksideName Жигулевское традиционное
+            p.weekBrandCardBacksideFactory Трехсоснеский завод
+            .weekBrandCardBacksideDetails
+              p.weekBrandCardBacksideDetailsText 4,9% об.
+              p.weekBrandCardBacksideDetailsText IBU 5
+            p.weekBrandCardBacksideText Светлое освежающее пиво со вкусом осоложённого зерна и хмеля. Это чистый прозрачный лагер, употреблять его нужно практически ледяным.
+            p.weekBrandCardBacksideAviable Доступно в 
+              span.weekBrandCardBacksideAviableNumber 15 точках.
+            img.weekBrandCardBacksideArrow(src="./img/arrowrightcircle.png")
+      .weekBrandCard
+        .weekBrandCardFlipper
+          .weekBrandCardFrontside
+            svg.weekBrandCardLike
+              use(xlink:href="#like")
+            img.weekBrandCardImg(src="./img/jzhiguli.png")
+            .weekBrandCardDetails
+              p.weekBrandCardDetailsText 3,6% об.
+              p.weekBrandCardDetailsText IBU 5
+            h3.weekBrandCardName Dome Kriek
+            img.weekBrandCardArrow(src="./img/arrowrightcircle.png")
+          .weekBrandCardBackside
+            h5.weekBrandCardBacksideName Жигулевское традиционное
+            p.weekBrandCardBacksideFactory Трехсоснеский завод
+            .weekBrandCardBacksideDetails
+              p.weekBrandCardBacksideDetailsText 4,9% об.
+              p.weekBrandCardBacksideDetailsText IBU 5
+            p.weekBrandCardBacksideText Светлое освежающее пиво со вкусом осоложённого зерна и хмеля. Это чистый прозрачный лагер, употреблять его нужно практически ледяным.
+            p.weekBrandCardBacksideAviable Доступно в 
+              span.weekBrandCardBacksideAviableNumber 15 точках.
+            img.weekBrandCardBacksideArrow(src="./img/arrowrightcircle.png")      
+    .bottomSide
+      .bottomSideBrand  
+        ul.bottomSideBrandList
+          each img in brandList
+            li.bottomSideBrandListItem
+              img.bottomSideBrandListItemImg(src=img)
+        img.bottomSideBrandArrow(src="./img/arrowrightcircle.png")
+      .bottomSideSlides
+        .bottomSideSlide
+          p.bottomSideSlideText 45 магазинов-пивных в Петербурге и области
+          img.bottomSideSlideArrow(src="./img/arrow-white-circle.png")
+        .bottomSideSlide
+          p.bottomSideSlideText Свежее пиво и вкусные напитки
+          img.bottomSideSlideArrow(src="./img/arrow-white-circle.png")
+        .bottomSideSlide
+          p.bottomSideSlideText Скидки в сентябре
+          img.bottomSideSlideArrow(src="./img/arrow-white-circle.png")
+      .bottomSideNavigation
+        ul.bottomSideNavigationList
+          each name,href in bottomNav
+            li.bottomSideNavigationListItem
+              a.bottomSideNavigationListItemLink(href=href)=name
+        .bottomSideNavigationContacts
+          svg.bottomSideNavigationContactsSvg
+            use(xlink:href="#phone")
+          p.bottomSideNavigationContactsNumber +7 (812) 998-88-91 
+    footer.footerSlides
+      p.footerSlidesCopyright © 2014–2016 ООО «ГлавПиво» Все права защищены.
+      .footerSlidesWarning
+        img.footerSlidesWarningImg(src="./img/warning.png")
+        p.footerSlidesWarningText Чрезмерное употребление алкогольной продукции вредит Вашему здоровью
+      .footerSlidesSocials
+        a.footerSlidesSocialLink(href="#")
+          svg.footerSlidesSocialLinkSvg.Facebook
+            use(xlink:href="#facebook")
+        a.footerSlidesSocialLink(href="#")  
+          svg.footerSlidesSocialLinkSvg.Vk
+            use(xlink:href="#vk")
+        a.footerSlidesSocialLink(href="#")    
+          svg.footerSlidesSocialLinkSvg.Instagram
+            use(xlink:href="#instagram")
+      .footerSlidesCreation
+        p.footerSlidesCreationText Создание — 
+          a.footerSlidesCreationTextName(href='#') Danke         

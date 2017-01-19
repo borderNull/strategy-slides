@@ -1,0 +1,47 @@
+.bottomSide
+      .bottomSideBrand.swiper-container  
+        ul.bottomSideBrandList.swiper-wrapper
+          each img in brandList
+            li.bottomSideBrandListItem.swiper-slide
+              img.bottomSideBrandListItemImg(src=img)
+        img.bottomSideBrandArrow(src="./img/arrowrightcircle.png")
+      .bottomSideSlides
+        .bottomSideSlide
+          p.bottomSideSlideText 45 магазинов-пивных в Петербурге и области
+          a.bottomSideSlideArrow(href="#")
+            img.bottomSideSlideArrowImg(src="./img/arrowright.png")
+        .bottomSideSlide
+          p.bottomSideSlideText Свежее пиво и вкусные напитки
+          a.bottomSideSlideArrow(href="#")
+            img.bottomSideSlideArrowImg(src="./img/arrowright.png")
+        .bottomSideSlide
+          p.bottomSideSlideText Скидки в сентябре
+          a.bottomSideSlideArrow(href="#")
+            img.bottomSideSlideArrowImg(src="./img/arrowright.png")
+      .bottomSideNavigation
+        ul.bottomSideNavigationList
+          each name,href in bottomNav
+            li.bottomSideNavigationListItem
+              a.bottomSideNavigationListItemLink(href=href)=name
+        .bottomSideNavigationContacts
+          svg.bottomSideNavigationContactsSvg
+            use(xlink:href="#phone")
+          a.bottomSideNavigationContactsNumber(href="tel:+7(812)998-88-91") +7 (812) 998-88-91 
+    footer.footerSlides 
+      p.footerSlidesCopyright © 2014–2016 ООО «ГлавПиво» Все права защищены.
+      .footerSlidesWarning
+        img.footerSlidesWarningImg(src="./img/warning.png")
+        p.footerSlidesWarningText Чрезмерное употребление алкогольной продукции вредит Вашему здоровью
+      .footerSlidesSocials
+        a.footerSlidesSocialLink(href="#")
+          svg.footerSlidesSocialLinkSvg.Facebook
+            use(xlink:href="#facebook")
+        a.footerSlidesSocialLink(href="#")  
+          svg.footerSlidesSocialLinkSvg.Vk
+            use(xlink:href="#vk")
+        a.footerSlidesSocialLink(href="#")    
+          svg.footerSlidesSocialLinkSvg.Instagram
+            use(xlink:href="#instagram")
+      .footerSlidesCreation
+        p.footerSlidesCreationText Создание — 
+          a.footerSlidesCreationTextName(href='#') Danke
