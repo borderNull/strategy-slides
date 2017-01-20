@@ -1,0 +1,110 @@
+.sapphireSlide
+    box vertical 
+    position relative
+    height 653px
+    overflow hidden
+    background url('../img/hop-sapphire-bg.png') no-repeat
+    background-size cover
+    +below(769px)
+      height 490px
+    +below(590px)
+      height 300px
+      
+.sapphireSlideGreenAngle
+    position absolute
+    top 0
+    right 0
+    opacity .4
+    
+.sapphireSlideArticle
+    box horizontal space-between
+    width 80%
+    margin 60px 0 110px 90px
+    z-index 10
+    
+.sapphireSlideArticleInfo
+    margin-top 40px
+    
+.sapphireSlideArticleInfoSpecial 
+    display inline-block
+    margin-bottom 35px
+    padding 17px 22px
+    background #f5f5f5
+    border-radius 16px
+    color #000
+    text-decoration none
+    text-transform uppercase
+    line-height 0px
+    letter-spacing 1px
+    font-size 10px
+    font-family 'Gotham Pro Bold', Arial
+    
+.sapphireSlideArticleInfoHeading
+    width 445px
+    margin-bottom 20px
+    color #fff
+    line-height 50px
+    font-size 48px
+    font-family 'Gotham Pro Medium', Arial
+    &Sort
+        font-family 'Gotham Pro Bold', Arial
+    &Profit
+        font-family 'Gotham Pro Regular', Arial
+    
+.sapphireSlideArticleInfoSale
+    display inline-block
+    padding 22px 33px
+    background #5db768
+    border-radius 22px
+    color #000
+    line-height 0px
+    letter-spacing 1px
+    text-decoration none
+    text-transform uppercase
+    text-shadow 1px 1px 0px rgba(255,255,255, 56%)
+    font-size 14px
+    font-family 'Proxima Nova Bold', Arial
+    
+.sapphireSlideArticlePrice
+    box vertical
+    min-width 300px
+
+.sapphireSlideArticlePriceBrand
+    box-item right
+    margin-bottom 15px
+    
+.sapphireSlideArticlePriceOld
+    width 85px
+    position relative
+    margin-bottom 20px
+    color #3fb68d
+    line-height 20px
+    font-size 32px
+    font-family 'Gotham Pro Regular', Arial
+    &:before
+        content ''
+        position absolute
+        top 44%
+        width 100%
+        height 3px
+        background #3fb68d
+        
+.sapphireSlideArticlePriceNew
+    box-item left
+    margin-bottom 12px
+    padding 15px 30px
+    width 132px
+    color #fff
+    font-size 48px
+    font-family 'Gotham Pro Bold', Arial
+    border 5px solid #3fb68d
+    border-radius 5% 50px
+    
+.sapphireSlideArticlePriceDescr
+    width 148px
+    margin-left 47px
+    color #fff
+    line-height 18px 
+    font-size 14px
+    font-family 'Gotham Pro Bold', Arial
+    

@@ -1,0 +1,27 @@
+extends _layout
+block content
+    section.sliderWrap
+        .sapphireSlide
+            img.sapphireSlideGreenAngle(src="./img/hop-right-side.png")
+            article.sapphireSlideArticle
+                .sapphireSlideArticleInfo
+                    a.sapphireSlideArticleInfoSpecial(href="#") специальная цена
+                    h1.sapphireSlideArticleInfoHeading Хмель 
+                        span.sapphireSlideArticleInfoHeadingSort Sapphire 
+                        span.sapphireSlideArticleInfoHeadingProfit по выгодной цене
+                    a.sapphireSlideArticleInfoSale(href="#") купить со скидкой
+                .sapphireSlideArticlePrice
+                    img.sapphireSlideArticlePriceBrand(src="./img/baywa-logo.png")
+                    p.sapphireSlideArticlePriceOld 1 740
+                    p.sapphireSlideArticlePriceNew 1 390
+                    p.sapphireSlideArticlePriceDescr Цена указана за 1 кг с учетом НДС 18%
+            ul.slideArticleList
+                li.slideArticleListItem.active
+                    p.slideArticleListItemName специальная цена
+                    a.slideArticleListItemTheme(href="#")  хмель «сапфир» по выгодной цене
+                li.slideArticleListItem
+                    p.slideArticleListItemName жизнь компании
+                    a.slideArticleListItemTheme(href="#") петербургский форум пивоваров
+                li.slideArticleListItem
+                    p.slideArticleListItemName взгляд профессионала
+                    a.slideArticleListItemTheme(href="#") будущее хмеля от олега цукалова

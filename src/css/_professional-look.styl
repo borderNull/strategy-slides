@@ -3,6 +3,10 @@
     position relative
     height 658px
     overflow hidden
+    +below(769px)
+      height 490px
+    +below(590px)
+      height 300px
     
 .profySlideBrownImg
     position absolute
@@ -14,18 +18,37 @@
     left 50%
     transform translateX(-50%)
     z-index 10
+    +below(769px) 
+      width 80%
+      top 0
+      left 76%
+    +below(769px)
+      width 115%
+      
     
 .profySlideHopImg
     position absolute
     top 0
     right 0
+    +below(1070px)
+      right -14%
+    +below(890px)
+      right -23%  
+    +below(769px)
+      width calc(110% + 30%)
+      right -63%
+    +below(590px)
+      width calc(110% + 45%)
+      right -70% 
+        
     
-.profySlideArticle
+.profySlideArticle 
     min-width 194px
-    max-width 434px
     margin 100px 0 45px 90px
     z-index 11
     color #fff
+    +below(769px)
+      margin 56px 0 45px 30px
     
 .profySlideArticleAuthor
     margin-bottom 12px
@@ -33,13 +56,20 @@
     text-transform uppercase
     font-size 16px
     font-family 'Proxima Nova Bold', Arial
+    +below(590px)
+      font-size 12px
     
 .profySlideArticleHeading
+    max-width 434px
     margin-bottom 35px
     line-height 40px
     letter-spacing -1px
     font-size 34px
     font-family 'Gotham Pro Bold', Arial
+    +below(590px)
+      max-width 180px
+      line-height 22px
+      font-size 16px
     
 .profySlideArticleLink
     padding 13px 32px
@@ -52,12 +82,19 @@
     font-size 14px
     font-family 'Proxima Nova Bold', Arial
     text-shadow 1px 1px 0px rgba(255,255,255, 56%)
+    +below(590px)
+      padding 12px 24px
+      font-size 12px
     
 .slideArticleList
     box horizontal space-between
     width 80%
     margin-left 90px
     z-index 10
+    +below(769px)
+      margin-left 30px
+    +below(590px)
+      display none
     
 .slideArticleListItem
     width 30%
