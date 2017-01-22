@@ -15,15 +15,23 @@
     top 0
     right 0
     opacity .4
+    +below(769px)
+      display none
     
 .sapphireSlideArticle
+    position relative
     box horizontal space-between
     width 80%
     margin 60px 0 110px 90px
     z-index 10
+    +below(769px)
+      width 100%
+      margin 40px 0 70px 20px
     
 .sapphireSlideArticleInfo
     margin-top 40px
+    +below(769px)
+      margin 0
     
 .sapphireSlideArticleInfoSpecial 
     display inline-block
@@ -38,6 +46,8 @@
     letter-spacing 1px
     font-size 10px
     font-family 'Gotham Pro Bold', Arial
+    +below(769px)
+      display none
     
 .sapphireSlideArticleInfoHeading
     width 445px
@@ -50,6 +60,12 @@
         font-family 'Gotham Pro Bold', Arial
     &Profit
         font-family 'Gotham Pro Regular', Arial
+    +below(769px)
+      width 260px
+      margin-bottom 130px
+      font-size 28px
+      line-height 28px
+      
     
 .sapphireSlideArticleInfoSale
     display inline-block
@@ -64,14 +80,28 @@
     text-shadow 1px 1px 0px rgba(255,255,255, 56%)
     font-size 14px
     font-family 'Proxima Nova Bold', Arial
+    +below(769px)
+      font-size 12px
     
 .sapphireSlideArticlePrice
+    position relative
     box vertical
     min-width 300px
+    +below(769px)
+      position absolute
+      bottom 50px
+      box horizontal space-between
+      width 78%
+    +below(500px)
+      width 90%
+      bottom 15px
+      
 
 .sapphireSlideArticlePriceBrand
     box-item right
     margin-bottom 15px
+    +below(769px)
+      display none
     
 .sapphireSlideArticlePriceOld
     width 85px
@@ -88,6 +118,12 @@
         width 100%
         height 3px
         background #3fb68d
+    +below(769px)
+      font-size 20px
+      &:before
+        height 2px
+        width 71%
+        top 14%
         
 .sapphireSlideArticlePriceNew
     box-item left
@@ -99,6 +135,11 @@
     font-family 'Gotham Pro Bold', Arial
     border 5px solid #3fb68d
     border-radius 5% 50px
+    +below(769px)
+      order 3
+      width 85px
+      font-size 30px
+      text-align center
     
 .sapphireSlideArticlePriceDescr
     width 148px
@@ -107,4 +148,12 @@
     line-height 18px 
     font-size 14px
     font-family 'Gotham Pro Bold', Arial
+    +below(769px)
+      box-item bottom
+      width 135px
+      margin 0
+      position absolute
+      top 35px
+      font-size 12px
+      
     

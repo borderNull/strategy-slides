@@ -504,6 +504,233 @@ h1, h2, h3, h4, h5, h6 {
   src: url("../fonts/GothaProReg.otf") format('OpenType');
 }
 
+.sapphireSlide {
+  position: relative;
+  height: 653px;
+  overflow: hidden;
+  background: url("../img/hop-sapphire-bg.png") no-repeat;
+  background-size: cover;
+  -js-display: flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+@media only screen and (max-width: 769px) {
+  .sapphireSlide {
+    height: 490px;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .sapphireSlide {
+    height: 300px;
+  }
+}
+.sapphireSlideGreenAngle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.4;
+}
+@media only screen and (max-width: 769px) {
+  .sapphireSlideGreenAngle {
+    display: none;
+  }
+}
+.sapphireSlideArticle {
+  position: relative;
+  width: 80%;
+  margin: 60px 0 110px 90px;
+  z-index: 10;
+  -js-display: flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+@media only screen and (max-width: 769px) {
+  .sapphireSlideArticle {
+    width: 100%;
+    margin: 40px 0 70px 20px;
+  }
+}
+.sapphireSlideArticleInfo {
+  margin-top: 40px;
+}
+@media only screen and (max-width: 769px) {
+  .sapphireSlideArticleInfo {
+    margin: 0;
+  }
+}
+.sapphireSlideArticleInfoSpecial {
+  display: inline-block;
+  margin-bottom: 35px;
+  padding: 17px 22px;
+  background: #f5f5f5;
+  border-radius: 16px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 0px;
+  letter-spacing: 1px;
+  font-size: 10px;
+  font-family: 'Gotham Pro Bold', Arial;
+}
+@media only screen and (max-width: 769px) {
+  .sapphireSlideArticleInfoSpecial {
+    display: none;
+  }
+}
+.sapphireSlideArticleInfoHeading {
+  width: 445px;
+  margin-bottom: 20px;
+  color: #fff;
+  line-height: 50px;
+  font-size: 48px;
+  font-family: 'Gotham Pro Medium', Arial;
+}
+.sapphireSlideArticleInfoHeadingSort {
+  font-family: 'Gotham Pro Bold', Arial;
+}
+.sapphireSlideArticleInfoHeadingProfit {
+  font-family: 'Gotham Pro Regular', Arial;
+}
+@media only screen and (max-width: 769px) {
+  .sapphireSlideArticleInfoHeading {
+    width: 260px;
+    margin-bottom: 130px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+.sapphireSlideArticleInfoSale {
+  display: inline-block;
+  padding: 22px 33px;
+  background: #5db768;
+  border-radius: 22px;
+  color: #000;
+  line-height: 0px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px rgba(255,255,255,0.56);
+  font-size: 14px;
+  font-family: 'Proxima Nova Bold', Arial;
+}
+@media only screen and (max-width: 769px) {
+  .sapphireSlideArticleInfoSale {
+    font-size: 12px;
+  }
+}
+.sapphireSlideArticlePrice {
+  position: relative;
+  min-width: 300px;
+  -js-display: flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+@media only screen and (max-width: 769px) {
+  .sapphireSlideArticlePrice {
+    position: absolute;
+    bottom: 50px;
+    width: 78%;
+    -js-display: flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .sapphireSlideArticlePrice {
+    width: 90%;
+    bottom: 15px;
+  }
+}
+.sapphireSlideArticlePriceBrand {
+  margin-bottom: 15px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+@media only screen and (max-width: 769px) {
+  .sapphireSlideArticlePriceBrand {
+    display: none;
+  }
+}
+.sapphireSlideArticlePriceOld {
+  width: 85px;
+  position: relative;
+  margin-bottom: 20px;
+  color: #3fb68d;
+  line-height: 20px;
+  font-size: 32px;
+  font-family: 'Gotham Pro Regular', Arial;
+}
+.sapphireSlideArticlePriceOld:before {
+  content: '';
+  position: absolute;
+  top: 44%;
+  width: 100%;
+  height: 3px;
+  background: #3fb68d;
+}
+@media only screen and (max-width: 769px) {
+  .sapphireSlideArticlePriceOld {
+    font-size: 20px;
+  }
+  .sapphireSlideArticlePriceOld:before {
+    height: 2px;
+    width: 71%;
+    top: 14%;
+  }
+}
+.sapphireSlideArticlePriceNew {
+  margin-bottom: 12px;
+  padding: 15px 30px;
+  width: 132px;
+  color: #fff;
+  font-size: 48px;
+  font-family: 'Gotham Pro Bold', Arial;
+  border: 5px solid #3fb68d;
+  border-radius: 5% 50px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+@media only screen and (max-width: 769px) {
+  .sapphireSlideArticlePriceNew {
+    -ms-flex-order: 3;
+        order: 3;
+    width: 85px;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+.sapphireSlideArticlePriceDescr {
+  width: 148px;
+  margin-left: 47px;
+  color: #fff;
+  line-height: 18px;
+  font-size: 14px;
+  font-family: 'Gotham Pro Bold', Arial;
+}
+@media only screen and (max-width: 769px) {
+  .sapphireSlideArticlePriceDescr {
+    width: 135px;
+    margin: 0;
+    position: absolute;
+    top: 35px;
+    font-size: 12px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
 .profySlide {
   position: relative;
   height: 658px;
@@ -680,141 +907,5 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   line-height: 24px;
   font-size: 16px;
-  font-family: 'Gotham Pro Bold', Arial;
-}
-
-.sapphireSlide {
-  position: relative;
-  height: 653px;
-  overflow: hidden;
-  background: url("../img/hop-sapphire-bg.png") no-repeat;
-  background-size: cover;
-  -js-display: flex;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-}
-@media only screen and (max-width: 769px) {
-  .sapphireSlide {
-    height: 490px;
-  }
-}
-@media only screen and (max-width: 590px) {
-  .sapphireSlide {
-    height: 300px;
-  }
-}
-.sapphireSlideGreenAngle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  opacity: 0.4;
-}
-.sapphireSlideArticle {
-  width: 80%;
-  margin: 60px 0 110px 90px;
-  z-index: 10;
-  -js-display: flex;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-}
-.sapphireSlideArticleInfo {
-  margin-top: 40px;
-}
-.sapphireSlideArticleInfoSpecial {
-  display: inline-block;
-  margin-bottom: 35px;
-  padding: 17px 22px;
-  background: #f5f5f5;
-  border-radius: 16px;
-  color: #000;
-  text-decoration: none;
-  text-transform: uppercase;
-  line-height: 0px;
-  letter-spacing: 1px;
-  font-size: 10px;
-  font-family: 'Gotham Pro Bold', Arial;
-}
-.sapphireSlideArticleInfoHeading {
-  width: 445px;
-  margin-bottom: 20px;
-  color: #fff;
-  line-height: 50px;
-  font-size: 48px;
-  font-family: 'Gotham Pro Medium', Arial;
-}
-.sapphireSlideArticleInfoHeadingSort {
-  font-family: 'Gotham Pro Bold', Arial;
-}
-.sapphireSlideArticleInfoHeadingProfit {
-  font-family: 'Gotham Pro Regular', Arial;
-}
-.sapphireSlideArticleInfoSale {
-  display: inline-block;
-  padding: 22px 33px;
-  background: #5db768;
-  border-radius: 22px;
-  color: #000;
-  line-height: 0px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 0px rgba(255,255,255,0.56);
-  font-size: 14px;
-  font-family: 'Proxima Nova Bold', Arial;
-}
-.sapphireSlideArticlePrice {
-  min-width: 300px;
-  -js-display: flex;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-}
-.sapphireSlideArticlePriceBrand {
-  margin-bottom: 15px;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-.sapphireSlideArticlePriceOld {
-  width: 85px;
-  position: relative;
-  margin-bottom: 20px;
-  color: #3fb68d;
-  line-height: 20px;
-  font-size: 32px;
-  font-family: 'Gotham Pro Regular', Arial;
-}
-.sapphireSlideArticlePriceOld:before {
-  content: '';
-  position: absolute;
-  top: 44%;
-  width: 100%;
-  height: 3px;
-  background: #3fb68d;
-}
-.sapphireSlideArticlePriceNew {
-  margin-bottom: 12px;
-  padding: 15px 30px;
-  width: 132px;
-  color: #fff;
-  font-size: 48px;
-  font-family: 'Gotham Pro Bold', Arial;
-  border: 5px solid #3fb68d;
-  border-radius: 5% 50px;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-.sapphireSlideArticlePriceDescr {
-  width: 148px;
-  margin-left: 47px;
-  color: #fff;
-  line-height: 18px;
-  font-size: 14px;
   font-family: 'Gotham Pro Bold', Arial;
 }
