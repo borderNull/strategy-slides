@@ -2,7 +2,6 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-
 html {
   font-family: sans-serif;
   /* 1 */
@@ -14,7 +13,6 @@ html {
 /**
  * Remove the margin in all browsers (opinionated).
  */
-
 body {
   margin: 0;
 }
@@ -25,7 +23,6 @@ body {
  * 1. Add the correct display in Edge, IE, and Firefox.
  * 2. Add the correct display in IE.
  */
-
 article,
 aside,
 details, /* 1 */
@@ -44,7 +41,6 @@ summary {
 /**
  * Add the correct display in IE 9-.
  */
-
 audio,
 canvas,
 progress,
@@ -54,7 +50,6 @@ video {
 /**
  * Add the correct display in iOS 4-7.
  */
-
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -62,7 +57,6 @@ audio:not([controls]) {
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
-
 progress {
   vertical-align: baseline;
 }
@@ -70,7 +64,6 @@ progress {
  * Add the correct display in IE 10-.
  * 1. Add the correct display in IE.
  */
-
 template, /* 1 */
 [hidden] {
   display: none;
@@ -81,7 +74,6 @@ template, /* 1 */
  * 1. Remove the gray background on active links in IE 10.
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
-
 a {
   background-color: transparent;
   /* 1 */
@@ -92,7 +84,6 @@ a {
  * Remove the outline on focused links when they are also active or hovered
  * in all browsers (opinionated).
  */
-
 a:active,
 a:hover {
   outline-width: 0;
@@ -103,7 +94,6 @@ a:hover {
  * 1. Remove the bottom border in Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-
 abbr[title] {
   border-bottom: none;
   /* 1 */
@@ -115,7 +105,6 @@ abbr[title] {
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
-
 b,
 strong {
   font-weight: inherit;
@@ -123,7 +112,6 @@ strong {
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-
 b,
 strong {
   font-weight: bolder;
@@ -131,7 +119,6 @@ strong {
 /**
  * Add the correct font style in Android 4.3-.
  */
-
 dfn {
   font-style: italic;
 }
@@ -139,7 +126,6 @@ dfn {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -147,7 +133,6 @@ h1 {
 /**
  * Add the correct background and color in IE 9-.
  */
-
 mark {
   background-color: #ff0;
   color: #000;
@@ -155,7 +140,6 @@ mark {
 /**
  * Add the correct font size in all browsers.
  */
-
 small {
   font-size: 80%;
 }
@@ -163,7 +147,6 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-
 sub,
 sup {
   font-size: 75%;
@@ -171,11 +154,9 @@ sup {
   position: relative;
   vertical-align: baseline;
 }
-
 sub {
   bottom: -0.25em;
 }
-
 sup {
   top: -0.5em;
 }
@@ -184,14 +165,12 @@ sup {
 /**
  * Remove the border on images inside links in IE 10-.
  */
-
 img {
   border-style: none;
 }
 /**
  * Hide the overflow in IE.
  */
-
 svg:not(:root) {
   overflow: hidden;
 }
@@ -201,7 +180,6 @@ svg:not(:root) {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-
 code,
 kbd,
 pre,
@@ -214,7 +192,6 @@ samp {
 /**
  * Add the correct margin in IE 8.
  */
-
 figure {
   margin: 1em 40px;
 }
@@ -222,7 +199,6 @@ figure {
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-
 hr {
   box-sizing: content-box;
   /* 1 */
@@ -239,7 +215,6 @@ hr {
  * 2. Change font properties to `inherit` in all browsers (opinionated).
  * 3. Remove the margin in Firefox and Safari.
  */
-
 button,
 input,
 optgroup,
@@ -256,7 +231,6 @@ textarea {
 /**
  * Restore the font weight unset by the previous rule.
  */
-
 optgroup {
   font-weight: bold;
 }
@@ -264,7 +238,6 @@ optgroup {
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-
 button,
 input {
   /* 1 */
@@ -274,7 +247,6 @@ input {
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-
 button,
 select {
   /* 1 */
@@ -285,7 +257,6 @@ select {
  *    controls in Android 4.
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
-
 button,
 html [type="button"], /* 1 */
 [type="reset"],
@@ -296,7 +267,6 @@ html [type="button"], /* 1 */
 /**
  * Remove the inner border and padding in Firefox.
  */
-
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -307,7 +277,6 @@ button::-moz-focus-inner,
 /**
  * Restore the focus styles unset by the previous rule.
  */
-
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -317,7 +286,6 @@ button:-moz-focusring,
 /**
  * Change the border, margin, and padding in all browsers (opinionated).
  */
-
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -329,7 +297,6 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
-
 legend {
   box-sizing: border-box;
   /* 1 */
@@ -347,21 +314,18 @@ legend {
 /**
  * Remove the default vertical scrollbar in IE.
  */
-
 textarea {
   overflow: auto;
   resize: none;
   vertical-align: top;
 }
 /* webkit focus outline */
-
 input,
 select,
 textarea {
   outline: 0;
 }
 /* Re-set default cursor for disabled elements. */
-
 [disabled] {
   cursor: default;
 }
@@ -369,7 +333,6 @@ textarea {
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
  */
-
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
@@ -380,7 +343,6 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -389,7 +351,6 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -399,7 +360,6 @@ textarea {
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
  */
-
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -407,25 +367,21 @@ textarea {
 /**
  * Correct the text style of placeholders in Chrome, Edge, ff, and Safari.
  */
-
 input::-moz-placeholder,
 textarea::-moz-placeholder {
   color: inherit;
   opacity: 0.54;
 }
-
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: inherit;
   opacity: 0.54;
 }
-
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: inherit;
   opacity: 0.54;
 }
-
 input::-ms-clear,
 input::-ms-reveal {
   display: none;
@@ -434,7 +390,6 @@ input::-ms-reveal {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
@@ -444,33 +399,35 @@ input::-ms-reveal {
 /* table
    ========================================================================== */
 /* Remove table cell spacing and padding */
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 td,
 th {
   padding: 0;
 }
-
 h1, h2, h3, h4, h5, h6, p, figure, form, blockquote {
   margin: 0;
 }
-
 ul, ol, li, dl, dd {
   margin: 0;
   padding: 0;
 }
-
 ul, ol {
   list-style: none outside none;
 }
-
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
   font-weight: normal;
+}
+@keyframes moveShutter {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @font-face {
@@ -527,9 +484,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .sapphireSlideGreenAngle {
+  width: 150%;
   position: absolute;
   top: 0;
-  right: 0;
+  animation: moveShutter;
+  animation-duration: 10s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   opacity: 0.4;
 }
 @media only screen and (max-width: 769px) {
@@ -752,8 +712,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .profySlideBrownImg {
+  width: 150%;
+  height: 100%;
   position: absolute;
   top: 0;
+  animation: moveShutter;
+  animation-duration: 6s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
 }
 .profySlideAuthorImg {
   position: absolute;
@@ -834,7 +799,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media only screen and (max-width: 590px) {
   .profySlideArticleHeading {
-    max-width: 180px;
+    max-width: 150px;
     line-height: 22px;
     font-size: 16px;
   }

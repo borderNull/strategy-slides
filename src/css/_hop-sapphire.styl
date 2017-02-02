@@ -11,9 +11,12 @@
       height 300px
       
 .sapphireSlideGreenAngle
+    width 150%
     position absolute
     top 0
-    right 0
+    animation moveShutter
+    animation-duration 10s
+    animation-timing-function cubic-bezier(0.23,1,0.32,1)
     opacity .4
     +below(769px)
       display none
