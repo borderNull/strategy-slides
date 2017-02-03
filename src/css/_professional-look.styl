@@ -1,5 +1,3 @@
-
-  
 .profySlide
     box vertical 
     position relative
@@ -11,14 +9,25 @@
       height 300px
     
 .profySlideBrownImg
-    width 150%
+    width 100%
     height 100%
     position absolute
-    top 0  
+    top 0
+    left -100%  
     animation moveShutter
     animation-duration 6s
     animation-timing-function cubic-bezier(0.23,1,0.32,1)
-     
+
+.profySlideBrownSide
+    width 100%
+    height 100%
+    position absolute
+    top 0 
+    left -100% 
+    animation moveShutter
+    animation-duration 3s
+    animation-timing-function cubic-bezier(0.23,1,0.32,1)
+    background #483E35
     
 .profySlideAuthorImg
     position absolute
@@ -34,10 +43,13 @@
       width 115%
       
     
-.profySlideHopImg
+.profySlideBgImg
+    background-image url("../img/profy-hop-side.png")
+    background-size cover
     position absolute
     top 0
     right 0
+    size 100%
     +below(1070px)
       right -14%
     +below(890px)
